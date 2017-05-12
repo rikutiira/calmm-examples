@@ -2,13 +2,13 @@ import 'styles/global.scss'
 import 'globals'
 
 import ReactDOM from 'react-dom'
-import TodoList from 'components/TodoList.jsx'
+import App from 'App.jsx'
 
 if (module.hot) {
   module.hot.accept()
 }
 
 ReactDOM.render(
-    <TodoList />,
+    <App />,
     document.querySelector('#app')
 )

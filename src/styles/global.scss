@@ -1,26 +1,30 @@
 @import 'variables';
 
-html, body {
-    font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background: $color-grey;
-    color: $color-dark;
-}
+:global {
+    html, body {
+        font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        background: $color-grey;
+        color: $color-dark;
+    }
 
-h1 {
-    font-size: 100px;
-    font-weight: 100;
-    color: $color-red-light;
-    margin: 0 0 20px 0;
-    text-align: center;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.025);
-}
+    h1 {
+        font-weight: 400;
+        margin: 0 0 20px 0;
+        text-align: center;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.025);
+    }
 
-* {
-    box-sizing: border-box;
-}
+    h2 {
+        margin-bottom: 0;
+    }
 
-:global .cf:after {
-    content: "";
-    display: table;
-    clear: both;
+    * {
+        box-sizing: border-box;
+    }
+
+    .cf:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
 }
