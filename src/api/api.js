@@ -1,5 +1,5 @@
 export const getNews = () => new Promise((resolve) => {
-    log('%cgetting news...', 'color: red; font-size: 20px;')
+    log('getting news...', 'color: red; font-size: 20px;')
 
     setTimeout(() => {
         resolve([

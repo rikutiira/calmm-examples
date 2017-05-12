@@ -4,7 +4,7 @@ import R from 'ramda'
 import K, * as U from 'karet.util'
 
 const log = (value) => {
-    console.log(`${value}`, 'color: red; font-size: 20px;')
+    console.log(`%c${value}`, 'color: red; font-size: 20px;')
 
     return value
 }

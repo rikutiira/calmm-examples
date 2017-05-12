@@ -9,6 +9,7 @@ import Example5 from 'views/Example5.jsx'
 import Example6 from 'views/Example6.jsx'
 import Example7 from 'views/Example7.jsx'
 import Assignment from 'views/Assignment.jsx'
+import AssignmentDone from 'views/AssignmentDone.jsx'
 
 const views = {
     example0: Example0,
@@ -19,7 +20,8 @@ const views = {
     example5: Example5,
     example6: Example6,
     example7: Example7,
-    assignment: Assignment
+    assignment: Assignment,
+    assignmentDone: AssignmentDone
 }
 
 const Start = () => (
