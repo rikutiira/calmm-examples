@@ -1,5 +1,6 @@
 import { fromKefir } from 'karet'
 import Link from 'components/Link.jsx'
+import Example0 from 'views/Example0.jsx'
 import Example1 from 'views/Example1.jsx'
 import Example2 from 'views/Example2.jsx'
 import Example3 from 'views/Example3.jsx'
@@ -10,6 +11,7 @@ import Example7 from 'views/Example7.jsx'
 import Assignment from 'views/Assignment.jsx'
 
 const views = {
+    example0: Example0,
     example1: Example1,
     example2: Example2,
     example3: Example3,
@@ -23,7 +25,7 @@ const views = {
 const Start = () => (
     <div>
         <h1>Calmm examples</h1>
-        <Link to="example1" />
+        <Link to="example0" />
     </div>
 )
 
