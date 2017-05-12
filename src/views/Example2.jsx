@@ -2,6 +2,10 @@ import { Component } from 'react'
 import { getNews } from 'api/api'
 import Link from 'components/Link.jsx'
 
+/**
+ * Example of fetching API data with class component
+ */
+
 class ApiWithoutCalmm extends Component {
     constructor() {
         super()

@@ -1,8 +1,5 @@
 /**
- * Write a component that:
- * - Has two number inputs
- * - If the sum of the two inputs is 42, display text "Done"
- * - Use the following functions: U.atom, U.add, U.ift, U.equals
+ * - U.lift can be used to lift any arbitrary function to work with observables
  */
 
 const isInteger = U.lift((val) => val.match(/^\d*$/))

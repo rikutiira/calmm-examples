@@ -1,10 +1,23 @@
 import Link from 'components/Link.jsx'
 
-const Child = ({ text }) => (
+/**
+ * - Your codebase can consist of solely stateless components because components never re-render,
+ *   only the subscribed leaf DOM nodes.
+ * - You can update lists without having to render whole lists again without any kind of cumbersome
+ *   optimization tricks
+ * - This is very performant way to write React code. Only the minimal amount is ever re-rendered which means
+ *   that there is no need for pure components, shouldComponentUpdate optimizations, memoized selectors or any other
+ *   solutions you might run with Redux or vanilla React applications
+ *
+ * - U.atom creates an observable with default value
+ * - Karet utils (U) has Ramda functions which also work with observables, alternatively you could do U.lift(func)
+ */
+
+const Child = ({ text }) => log('child renders') && (
     <div>{text}</div>
 )
 
-const Parent = ({ items = U.atom([]), value = U.atom('') }) => (
+const Parent = ({ items = U.atom([]), value = U.atom('') }) => log('parent renders') && (
     <div>
         <h1>Stateless components only</h1>
 

@@ -1,5 +1,11 @@
 import Link from 'components/Link.jsx'
 
+/**
+ * - Observables are composable. Observables have input and output and they all have same interface.
+ * - This means that you can take any arbitrary amount of observables and combine them and derive
+ *   new observables which get updated automatically.
+ */
+
 const bars = [
     'One Pint',
     'Rotterdam',

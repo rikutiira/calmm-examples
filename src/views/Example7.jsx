@@ -1,6 +1,11 @@
 import Link from 'components/Link.jsx'
 import styles from './example7.scss'
 
+/**
+ * With Kefir (or any good FRP library for that matter) you can easily
+ * write even complex UI components.
+ */
+
 const DragAndDrop = () => {
     const node = U.variable()
     const dragging = node.flatMapLatest((node) =>
