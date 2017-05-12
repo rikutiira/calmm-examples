@@ -1,3 +1,5 @@
+import Link from 'components/Link.jsx'
+
 const Child = ({ text }) => (
     <div>{text}</div>
 )
@@ -20,6 +22,8 @@ const Parent = ({ items = U.atom([]), value = U.atom('') }) => (
             items.modify(U.append(value.get()))
             value.set('')
         }}>Submit</button>
+
+        <Link to="example2" />
     </div>
 )
 

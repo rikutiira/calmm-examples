@@ -1,3 +1,5 @@
+import Link from 'components/Link.jsx'
+
 const bars = [
     'One Pint',
     'Rotterdam',
@@ -32,6 +34,8 @@ const Composability = ({ beer = U.atom(''), selectedBar = U.atom('') }) => {
             <div>
                 {U.ift(enabled, 'Oikea valinta!')}
             </div>
+
+            <Link to="example7" />
         </div>
     )
 }

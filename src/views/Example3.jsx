@@ -1,4 +1,5 @@
 import { getNews } from 'api/api'
+import Link from 'components/Link.jsx'
 
 const ApiWithCalmm = () => {
     const news = Kefir.fromPromise(getNews()).toProperty(() => [])
@@ -11,6 +12,8 @@ const ApiWithCalmm = () => {
                 'Lataa...',
                 U.map(({ id, title }) => <div key={id}>- {title}</div>, news)
             )}
+
+            <Link to="example4" />
         </div>
     )
 }

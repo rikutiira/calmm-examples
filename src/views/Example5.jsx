@@ -1,5 +1,6 @@
 import { respondBelow } from 'utils/component'
 import { getNews } from 'api/api'
+import Link from 'components/Link.jsx'
 
 const isMobile = respondBelow('md')
 const news = Kefir
@@ -18,6 +19,8 @@ const ConditionalRendering = () => (
                 {U.map(({ id, title }) => <div key={id}>- {title}</div>, news)}
             </div>
         )}
+
+        <Link to="example6" />
     </div>
 )
 

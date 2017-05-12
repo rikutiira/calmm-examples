@@ -1,5 +1,6 @@
 import { Component } from 'react'
 import { getNews } from 'api/api'
+import Link from 'components/Link.jsx'
 
 class ApiWithoutCalmm extends Component {
     constructor() {
@@ -29,6 +30,8 @@ class ApiWithoutCalmm extends Component {
                         <div key={id}>- {title}</div>
                     )
                 }
+
+                <Link to="example3" />
             </div>
         )
     }

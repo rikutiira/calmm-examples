@@ -1,3 +1,4 @@
+import Link from 'components/Link.jsx'
 import styles from './example7.scss'
 
 const DragAndDrop = () => {
@@ -22,6 +23,8 @@ const DragAndDrop = () => {
                 className={styles.ball}
                 ref={(ref) => ref && node.set(ref)}
                 style={dragging} />
+
+            <Link to="assignment" />
         </div>
     )
 }
